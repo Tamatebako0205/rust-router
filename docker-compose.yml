@@ -43,7 +43,8 @@ services:
     sysctls:
       - net.ipv4.ip_forward=0
     tty: true
-      
+    entrypoint: ./entrypoint.sh
+
 networks:
   net1:
     ipam:
