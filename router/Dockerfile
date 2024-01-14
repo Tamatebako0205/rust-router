@@ -3,7 +3,6 @@ FROM rust:1.72
 RUN apt update
 RUN apt install -y vim iputils-ping iproute2 traceroute tcpdump
 
-
 WORKDIR mnt
 COPY mnt/entrypoint.sh ./
 RUN chmod 777 entrypoint.sh
